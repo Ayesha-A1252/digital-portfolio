@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Medical Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}
+		
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.input {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.select {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.textarea {
+			width: 100%;
+			height: 100px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.button {
+			width: 100%;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Medical Form</h2>
+		<form>
+			<div class="form-group">
+				<label class="label" for="patientName">Patient Name:</label>
+				<input class="input" type="text" id="patientName" name="patientName">
+			</div>
+			<div class="form-group">
+				<label class="label" for="dateOfBirth">Date of Birth:</label>
+				<input class="input" type="date" id="dateOfBirth" name="dateOfBirth">
+			</div>
+			<div class="form-group">
+				<label class="label" for="contactNumber">Contact Number:</label>
+				<input class="input" type="tel" id="contactNumber" name="contactNumber">
+			</div>
+			<div class="form-group">
+				<label class="label" for="address">Address:</label>
+				<textarea class="textarea" id="address" name="address"></textarea>
+			</div>
+			<div class="form-group">
+				<label class="label" for="medicalHistory">Medical History:</label>
+				<textarea class="textarea" id="medicalHistory" name="medicalHistory"></textarea>
+			</div>
+			<div class="form-group">
+				<label class="label" for="currentMedications">Current Medications:</label>
+				<textarea class="textarea" id="currentMedications" name="currentMedications"></textarea>
+			</div>
+			<div class="form-group">
+				<label class="label" for="allergies">Allergies:</label>
+				<textarea class="textarea" id="allergies" name="allergies"></textarea>
+			</div>
+			<div class="form-group">
+				<label class="label" for="emergencyContact">Emergency Contact:</label>
+				<input class="input" type="text" id="emergencyContact" name="emergencyContact">
+			</div>
+			<div class="form-group">
+				<label class="label" for="relationship">Relationship:</label>
+				<select class="select" id="relationship" name="relationship">
+					<option value="">Select Relationship</option>
+					<option value="family member">Family Member</option>
+					<option value="friend">Friend</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<button class="button" type="submit">Submit</> button>
+		</form>
+	</div>
+</body>
+</html>
+
