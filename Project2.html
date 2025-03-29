@@ -1,0 +1,72 @@
+<!DOCTYPE html
+<html>
+<head>
+	<title>Bank Account Creation</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}
+		
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.input {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.button {
+			width: 100%;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Bank Account Creation</h2>
+		<form>
+			<div class="form-group">
+				<label class="label" for="accountNumber">Account Number:</label>
+				<input class="input" type="text" id="accountNumber" name="accountNumber">
+			</div>
+			<div class="form-group">
+				<label class="label" for="accountHolder">Account Holder:</label>
+				<input class="input" type="text" id="accountHolder" name="accountHolder">
+			</div>
+			<div class="form-group">
+				<label class="label" for="initialBalance">Initial Balance:</label>
+				<input class="input" type="number" id="initialBalance" name="initialBalance">
+			</div>
+			<button class="button" type="submit">Create Account</button>
+		</form>
+	</div>
+</body>
+</html>
